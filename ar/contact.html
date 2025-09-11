@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - IGS | اطلب عرض سعر مجاني</title>
+    <meta name="description" content="اتصل بـ IGS للحصول على عرض سعر مجاني. متخصصون في البحث عن المياه والآبار والحفر وتحليل التربة الزراعية.">
+    <link rel="icon" type="image/png" href="../images/icon-igs.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../images/icon-igs.png" alt="شعار IGS" class="logo-img">
+                <div class="logo-text">
+                    <h2>IGS</h2>
+                    <span>Intégrale Géophysique Système</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="about.html" class="nav-link">من نحن</a></li>
+                <li><a href="services.html" class="nav-link">الخدمات</a></li>
+                <li><a href="contact.html" class="nav-link active">اتصل بنا</a></li>
+                <li class="language-selector">
+                    <a href="../index.html" class="lang-link">FR</a>
+                    <span class="lang-separator">|</span>
+                    <a href="index.html" class="lang-link active">عربي</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>اتصل بنا</h1>
+            <p>اطلب عرض سعر لمشاريع البحث عن المياه وتحليل التربة</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>معلومات الاتصال</h2>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>الهاتف</h3>
+                            <p>+33 (0)X XX XX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>contact@igs-prospection.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>العنوان</h3>
+                            <p>عنوان الشركة<br>الرمز البريدي، المدينة</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>ساعات العمل</h3>
+                            <p>الاثنين - الجمعة: 8:00 - 18:00<br>السبت: 9:00 - 12:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2>اطلب عرض سعر</h2>
+                    <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <div style="display: none;">
+                            <label>لا تملأ هذا الحقل إذا كنت إنساناً: <input name="bot-field" /></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">الهاتف</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">الخدمة المطلوبة *</label>
+                            <select id="service" name="service" required>
+                                <option value="">اختر خدمة</option>
+                                <option value="recherche-eau">البحث عن المياه</option>
+                                <option value="puits-forages">الآبار والحفر</option>
+                                <option value="analyse-sols">تحليل التربة</option>
+                                <option value="etudes-hydrogeologiques">الدراسات الهيدروجيولوجية</option>
+                                <option value="autre">أخرى</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">موقع المشروع</label>
+                            <input type="text" id="location" name="location" placeholder="المدينة، المحافظة">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">الرسالة *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="اوصف مشروعك بالتفصيل..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">إرسال الطلب</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>الأسئلة الشائعة</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>كم تكلف دراسة البحث عن المياه؟</h3>
+                    <p>التكلفة تعتمد على مساحة أرضك وتعقيد الدراسة. اتصل بنا للحصول على عرض سعر مخصص.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>كم من الوقت تستغرق الدراسة؟</h3>
+                    <p>الدراسة الأساسية تستغرق عادة 1-2 أيام في الميدان، بالإضافة إلى 1-2 أسبوع للتحليل وإعداد التقرير.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>ما هي أقصى عمق للاستكشاف؟</h3>
+                    <p>يمكننا القيام بالاستكشاف حتى عمق 500 متر حسب الظروف الجيولوجية واحتياجاتك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IGS</h3>
+                    <p>Intégrale Géophysique Système</p>
+                    <p>شريكك في البحث عن المياه</p>
+                </div>
+                <div class="footer-section">
+                    <h4>الخدمات</h4>
+                    <ul>
+                        <li><a href="services.html#recherche-eau">البحث عن المياه</a></li>
+                        <li><a href="services.html#puits-forages">الآبار والحفر</a></li>
+                        <li><a href="services.html#analyse-sols">تحليل التربة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>اتصل بنا</h4>
+                    <p><i class="fas fa-phone"></i> +33 (0)X XX XX XX XX</p>
+                    <p><i class="fas fa-envelope"></i> contact@igs-prospection.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> عنوان الشركة</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IGS - Intégrale Géophysique Système. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

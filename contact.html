@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - IGS | Demandez un devis gratuit</title>
+    <meta name="description" content="Contactez IGS pour un devis gratuit. Spécialistes en recherche d'eau, puits et forages, analyse des sols agricoles.">
+    <link rel="icon" type="image/png" href="images/icon-igs.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/icon-igs.png" alt="Logo IGS" class="logo-img">
+                <div class="logo-text">
+                    <h2>IGS</h2>
+                    <span>Intégrale Géophysique Système</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li class="language-selector">
+                    <a href="index.html" class="lang-link active">FR</a>
+                    <span class="lang-separator">|</span>
+                    <a href="ar/index.html" class="lang-link">عربي</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Demandez un devis pour vos projets de recherche d'eau et d'analyse des sols</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Informations de contact</h2>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+33 (0)X XX XX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@igs-prospection.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>Adresse de l'entreprise<br>Code postal, Ville</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>Lundi - Vendredi : 8h00 - 18h00<br>Samedi : 9h00 - 12h00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2>Demandez un devis</h2>
+                    <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <div style="display: none;">
+                            <label>Ne remplissez pas ce champ si vous êtes humain: <input name="bot-field" /></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service souhaité *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Sélectionnez un service</option>
+                                <option value="recherche-eau">Recherche d'eau</option>
+                                <option value="puits-forages">Puits & Forages</option>
+                                <option value="analyse-sols">Analyse des sols</option>
+                                <option value="etudes-hydrogeologiques">Études hydrogéologiques</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Localisation du projet</label>
+                            <input type="text" id="location" name="location" placeholder="Ville, département">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet en détail..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section
+    <section class="map-section">
+        <div class="container">
+            <h2>Notre zone d'intervention</h2>
+            <p>Nous intervenons dans toute la région. Contactez-nous pour vérifier la disponibilité dans votre zone.</p>
+            <div class="map-placeholder">
+                <i class="fas fa-map"></i>
+                <p>Carte interactive à venir</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Questions fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Combien coûte une étude de recherche d'eau ?</h3>
+                    <p>Le coût dépend de la superficie de votre terrain et de la complexité de l'étude. Contactez-nous pour un devis personnalisé.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Combien de temps prend une étude ?</h3>
+                    <p>Une étude de base prend généralement 1-2 jours sur le terrain, plus 1-2 semaines pour l'analyse et la rédaction du rapport.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Quelle est la profondeur maximale de la prospection ?</h3>
+                    <p>Nous faire une prospection jusqu'à 500 mètres de profondeur selon les conditions géologiques et vos besoins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IGS</h3>
+                    <p>Intégrale Géophysique Système</p>
+                    <p>Votre partenaire pour la recherche d'eau</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#recherche-eau">Recherche d'eau</a></li>
+                        <li><a href="services.html#puits-forages">Puits & Forages</a></li>
+                        <li><a href="services.html#analyse-sols">Analyse des sols</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +33 (0)X XX XX XX XX</p>
+                    <p><i class="fas fa-envelope"></i> contact@igs-prospection.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Adresse de l'entreprise</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IGS - Intégrale Géophysique Système. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
