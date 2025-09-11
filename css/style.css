@@ -17,8 +17,12 @@ body {
     text-align: right;
 }
 
+[dir="rtl"] .navbar {
+    direction: ltr;
+}
+
 [dir="rtl"] .nav-menu {
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 [dir="rtl"] .language-selector {
@@ -44,6 +48,18 @@ body {
 
 [dir="rtl"] .expertise-content {
     direction: rtl;
+}
+
+[dir="rtl"] .expertise ul li:before,
+[dir="rtl"] .service-detail ul li:before {
+    right: 0;
+    left: auto;
+}
+
+[dir="rtl"] .expertise ul li,
+[dir="rtl"] .service-detail ul li {
+    padding-right: 25px;
+    padding-left: 0;
 }
 
 .container {
